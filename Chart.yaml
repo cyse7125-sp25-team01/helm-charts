@@ -1,0 +1,17 @@
+apiVersion: v2
+name: main-chart
+description: A Helm chart that includes subcharts
+type: application
+version: 1.0.0
+appVersion: 1.0.0
+
+dependencies:
+  - name: webapp
+    version: 1.0.0
+    repository: file://webapp
+  - name: external-secrets
+    version: 1.0.0
+    repository: file://external-secrets
+  - name: cert-manager
+    version: 1.0.0
+    repository: file://cert-manager
