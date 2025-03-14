@@ -1,4 +1,18 @@
-letsencryptserver: https://acme-staging-v02.api.letsencrypt.org/directory
-letsencryptemail: manas.gourabathini@gmail.com
-namespace: webapp
-certmanagertype: letsencrypt-staging
+letsencryptserver: ENC[AES256_GCM,data:PSjmlCZdkxvQlkb6OSFgcSBfbfKOVjpEFakpGt2ZUtLmgbIkCHnYAp+xlP2+HQqeKds0BLVw,iv:iBzh1qESVv8rug60A0yHYFw85MCxf3R06AM0uUaJCbA=,tag:bfAkPJNioXnQ2JVYR7+V8g==,type:str]
+letsencryptemail: ENC[AES256_GCM,data:O1DgrvVZnoGfhOcK/Li/ZM+Ahvd8GhL/yoRpJQ==,iv:d/Jj89+yrog9tHuVyL/BPCLgm5/saINL0QQTtQMEz6c=,tag:BDhKIH0NULtGzvWGfeHCMg==,type:str]
+namespace: ENC[AES256_GCM,data:h4bYE6bd,iv:v9S0gVd1C5HkgTwBK3Zdxb5m/YrIrexN5UbA9EMDDM8=,tag:aDsQUjeobL42eBYpZantyw==,type:str]
+certmanagertype: ENC[AES256_GCM,data:pTi+WBLPWB+GBJZ2Hk0SZZ/0kQ==,iv:yAeVddCWKX+vQ9h7yfbRlDgcxHJ0/XK7JituaABDUmQ=,tag:g/2XO4y/FE17y/Ucfd1/sg==,type:str]
+sops:
+    kms: []
+    gcp_kms:
+        - resource_id: projects/csye7125-prd/locations/global/keyRings/sops-key/cryptoKeys/sops-key
+          created_at: "2025-03-14T20:17:43Z"
+          enc: CiQAly6HlmUwKEWTYXZphmxX8+Td47qI5mj+BKP3tVmvn7RlmUsSSQCbzmwTHR5EAbw0ICuGmDCUDE2alM/u0yO3+yh3gpJpbsQZ9Uh+QJG/p+rWIM2dK8N7ZVyuuFn3eZhlhRQjxBk9cxhHEcSG2kc=
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2025-03-14T20:17:43Z"
+    mac: ENC[AES256_GCM,data:xUwVxgBzkeksQDXLyJ1ko8uT7qI3ff9z20sd4p1cMz+ZPgZdw4SZVJYME8A+F06LQ8DMDNIUuK2CFMUgKbkWjRa6i8oQSGhP4MVaRlZia6+XQmTT+ehvWZrwegd+vWrsB9Cd1BvOdMF6QQg5kvmjHEjp21E4kSacSjG1wm6yuxA=,iv:K3Ck5GjxiD7QvWjVjAdgkvtI9tlPXdOsC2k2eiSOQ04=,tag:VVHqNiCDQu7k8rg/8ytAow==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.9.3
