@@ -1,0 +1,16 @@
+# issuer-lets-encrypt-staging.yaml
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: {{ .Values.certmanagertype }}
+  namespace: {{ .Values.namespace }}
+spec:
+  acme:
+    server: {{ .Values.letsencryptserver }}
+    email: {{ .Values.letsencryptemail }}
+    privateKeySecretRef:
+      name: {{ .Values.certmanagertype }}
+    solvers:
+    - http01:
+        ingress:
+          name: go-webapp-ingress

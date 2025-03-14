@@ -1,0 +1,18 @@
+letsencryptserver: ENC[AES256_GCM,data:M+qdxbg/+UyEA8Goah6Th6cK7Dh03OCZ5kS+FoSiI5WZmBlcCvlgLSNyw8uXavUp7HAJ4d0I,iv:VCVyaWRC02iY9pOTkFGno9SWW6UtBSXHNIro2MLIgkI=,tag:plFEpnRVB14j6cMQLUjwUQ==,type:str]
+letsencryptemail: ENC[AES256_GCM,data:Xqn4G/sLLpgIDYwaAeWqiseXEDVEH4QHDCFk2w==,iv:AaFhTYYfqG6PGah/Nxu2ZZ+WyGq2rOWNCPJNOs2W+Tg=,tag:0tH78p8GjlMqikKxiRPdgg==,type:str]
+namespace: ENC[AES256_GCM,data:cx0+f1Hh,iv:fZMk+k30Z+iwEQZ4cCxdo5tdCh520Y1HByt4XQk0pY4=,tag:gEx5QEGyymgIddiU0vHyjg==,type:str]
+certmanagertype: ENC[AES256_GCM,data:WCF/sYU6nf8uoqeg7n1UVjPzAw==,iv:XGGRo1b78F1u+OPBvAB0YSdfPD/dNBtJS2X2WxQACoo=,tag:RmSyny98bSwVOnessgSANg==,type:str]
+sops:
+    kms: []
+    gcp_kms:
+        - resource_id: projects/csye7125-prd/locations/global/keyRings/sops-key/cryptoKeys/sops-key
+          created_at: "2025-03-14T02:24:17Z"
+          enc: CiQAly6HlvtI3tqE+F7uwWDIY8u+qisOnG4pSniU0zaUBTLV8JASSQCbzmwT05/YKATwmR5woyBAyRQWcb3uFAgtMQEaIhmyjmBccdCnY/z0vS9fFOlC3bmQPon5VvO7dfcqxY23gMVdj0TgNXMzQmI=
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2025-03-14T02:24:18Z"
+    mac: ENC[AES256_GCM,data:e4aUpMnX9ImW4OThxP+qfkKPhk8IFZxPQDp1vrKmb6fOv9jKCOGdL5C90MDEkcy5lVktds+oAqHT420k4GkAZDFE+r1GFBUuTTRrbvA64u7IzFnJGBE87kcso2qmkPy0frukncH/kNayh7FhBbSp0D8rzgjB9BEPog1TJwmGEPY=,iv:RLQuL+JpDxDthlODhn0uHLY7eqEeJDLe/mQugB3CAX0=,tag:6PaPRewahdfOkh0lcumh8A==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.9.3
