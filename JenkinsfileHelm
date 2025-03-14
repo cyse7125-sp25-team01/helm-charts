@@ -78,7 +78,7 @@ pipeline {
         stage('Package Helm Chart') {
             steps {
                 script {
-					sh "zip -r main-${env.VERSION}.zip ."
+					sh "zip -r main-chart-${env.VERSION}.zip ."
                     echo "Packaging Helm chart..."
                     // Package the Helm chart and extract the .tgz file path
                     //def chartFile = sh(script: "helm package ${env.CHART_DIR} | awk -F 'to: ' '{print \$2}'", returnStdout: true).trim()
