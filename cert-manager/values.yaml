@@ -1,18 +1,19 @@
-letsencryptserver: ENC[AES256_GCM,data:PSjmlCZdkxvQlkb6OSFgcSBfbfKOVjpEFakpGt2ZUtLmgbIkCHnYAp+xlP2+HQqeKds0BLVw,iv:iBzh1qESVv8rug60A0yHYFw85MCxf3R06AM0uUaJCbA=,tag:bfAkPJNioXnQ2JVYR7+V8g==,type:str]
-letsencryptemail: ENC[AES256_GCM,data:O1DgrvVZnoGfhOcK/Li/ZM+Ahvd8GhL/yoRpJQ==,iv:d/Jj89+yrog9tHuVyL/BPCLgm5/saINL0QQTtQMEz6c=,tag:BDhKIH0NULtGzvWGfeHCMg==,type:str]
-namespace: ENC[AES256_GCM,data:h4bYE6bd,iv:v9S0gVd1C5HkgTwBK3Zdxb5m/YrIrexN5UbA9EMDDM8=,tag:aDsQUjeobL42eBYpZantyw==,type:str]
-certmanagertype: ENC[AES256_GCM,data:pTi+WBLPWB+GBJZ2Hk0SZZ/0kQ==,iv:yAeVddCWKX+vQ9h7yfbRlDgcxHJ0/XK7JituaABDUmQ=,tag:g/2XO4y/FE17y/Ucfd1/sg==,type:str]
+letsencryptserver: ENC[AES256_GCM,data:BC2Z4qhf9fPTrmODqp31IjfRLmptPFbYgfqK1aDMW7i6uBKg6aPo2Q4TAl3KDWQK8JnbdkKI,iv:mz3a0Rh/4Y0uPhm7Kshu1S2tVTTK8Ml1xTRlSUx5PEM=,tag:KDcVK6ySjADMrk+PbBGlwQ==,type:str]
+letsencryptemail: ENC[AES256_GCM,data:dLdRtNYjxaTTr4eql7gi47+PL4Dog1Bv8Qm2Dg==,iv:W/Og6DenBz5066gxN3xUPbEmbEE76oXZLAUzh+sQysg=,tag:q4BC85jkRWcG/gcse6pX4A==,type:str]
+namespace: ENC[AES256_GCM,data:6uaN5+4cz3srQ8+l,iv:IOTUkbw3uzahLzf9N2ExFB5MYQGRm7xyZaDdGL4MkKY=,tag:FkbpKYVbpGc1y49vi0Xv9w==,type:str]
+certmanagertype: ENC[AES256_GCM,data:ulZVzx9/S9mvCJvtEWSIu7N79Q==,iv:KAvnSOsX8qKdmfKWZgcejOKklWM8kIljoA9vfTim0dw=,tag:CCmTDbA5diGJALziAq1Kwg==,type:str]
+hostname: ENC[AES256_GCM,data:GhsWeWl/BZs4rpFRuixP8GMG4YiXlS5bcjuBEYI=,iv:b4fG3pjwydMABRpVDnFbRISkv7QyYACiot2OwTWHCRY=,tag:HZ7cwg0IlDTIrAFzyRE0bg==,type:str]
 sops:
     kms: []
     gcp_kms:
         - resource_id: projects/csye7125-prd/locations/global/keyRings/sops-key/cryptoKeys/sops-key
-          created_at: "2025-03-14T20:17:43Z"
-          enc: CiQAly6HlmUwKEWTYXZphmxX8+Td47qI5mj+BKP3tVmvn7RlmUsSSQCbzmwTHR5EAbw0ICuGmDCUDE2alM/u0yO3+yh3gpJpbsQZ9Uh+QJG/p+rWIM2dK8N7ZVyuuFn3eZhlhRQjxBk9cxhHEcSG2kc=
+          created_at: "2025-03-28T10:55:49Z"
+          enc: CiQAly6HltVGNp54VTVXFtN1/AkWZDVKiyM7j6Xptat/JxCSveASSQCbzmwTo2RFm3GH8bk+4YuGoKPi5Vsq5xUwRDGTSBr6Dke4Uv7NfNLRdOmWLDJbFXbfqBJrfH92IoVmmmUFKG3DsXFGMIGZ53E=
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2025-03-14T20:17:43Z"
-    mac: ENC[AES256_GCM,data:xUwVxgBzkeksQDXLyJ1ko8uT7qI3ff9z20sd4p1cMz+ZPgZdw4SZVJYME8A+F06LQ8DMDNIUuK2CFMUgKbkWjRa6i8oQSGhP4MVaRlZia6+XQmTT+ehvWZrwegd+vWrsB9Cd1BvOdMF6QQg5kvmjHEjp21E4kSacSjG1wm6yuxA=,iv:K3Ck5GjxiD7QvWjVjAdgkvtI9tlPXdOsC2k2eiSOQ04=,tag:VVHqNiCDQu7k8rg/8ytAow==,type:str]
+    lastmodified: "2025-03-28T10:55:49Z"
+    mac: ENC[AES256_GCM,data:s4clGZ7x4HX8hsEu7kO9IBqajfEKSoEgapipAjVR5Hpsgtt8dO9RKLxgiTt132SURN8JF1qTZkQWbKZexYdqCpkbTydZGRPQsr+0jhybxDkd3fFx6GN53QmVEGmMYr+rX5eo9WuoWO426gVSASgpwYxv7vQzwGxFV+EGD/h8beQ=,iv:+12Dp924UDKRquqLMeEvsUfhV57MDwj/kTL7wqvK6j4=,tag:PIRMHeg8EmyJuEpdwWu5iA==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.9.3
