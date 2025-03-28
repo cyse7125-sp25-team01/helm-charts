@@ -1,6 +1,5 @@
-# issuer-lets-encrypt-staging.yaml
 apiVersion: cert-manager.io/v1
-kind: Issuer
+kind: ClusterIssuer
 metadata:
   name: {{ .Values.certmanagertype }}
   namespace: {{ .Values.namespace }}
@@ -13,4 +12,4 @@ spec:
     solvers:
     - http01:
         ingress:
-          name: go-webapp-ingress
+          class: istio
