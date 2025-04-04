@@ -15,3 +15,9 @@ dependencies:
   - name: cert-manager
     version: 1.0.0
     repository: file://cert-manager
+  - name: external-dns
+    version: 1.0.0
+    repository: file://external-dns
+  - name: kafka
+    version: 1.0.0
+    repository: file://kafka
