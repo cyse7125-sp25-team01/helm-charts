@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: otel-collector-conf
+  namespace: {{ .Values.namespace }}
+data:
+  otel-collector-config.yaml: |
+    receivers:
+      otlp:
+        protocols:
+          grpc:
+            endpoint: 0.0.0.0:4317
+          http:
+            endpoint: 0.0.0.0:4318
+
+    processors:
+      batch:
+        timeout: 1s
+        send_batch_size: 1024
+      memory_limiter:
+        check_interval: 1s
+        limit_mib: 1000
+        spike_limit_mib: 200
+
+    exporters:
+      googlecloud:
+        project: "{{ .Values.projectId }}"
+      
+      debug:
+        verbosity: detailed
+
+    service:
+      telemetry:
+        logs:
+          level: debug
+      pipelines:
+        traces:
+          receivers: [otlp]
+          processors: [memory_limiter, batch]
+          exporters: [googlecloud, debug]
