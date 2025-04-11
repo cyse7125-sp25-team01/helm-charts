@@ -57,6 +57,16 @@ spec:
           ports:
             - containerPort: {{ .Values.goApp.targetPort }}
           env:
+            - name: SERVICE_NAME
+              value: {{ .Values.service.name }}
+            - name: SERVICE_VERSION
+              value: {{ .Values.service.version }}
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: {{ .Values.otel.endpoint }}
+            - name: OTEL_INSECURE
+              value: "true"
+            - name: GOOGLE_CLOUD_PROJECT
+              value: {{ .Values.project_id }}
             - name: GCS_BUCKET_NAME
               valueFrom:
                 secretKeyRef:

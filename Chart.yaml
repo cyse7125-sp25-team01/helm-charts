@@ -21,3 +21,6 @@ dependencies:
   - name: kafka
     version: 1.0.0
     repository: file://kafka
+  - name: otel
+    version: 1.0.0
+    repository: file://otel
