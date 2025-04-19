@@ -25,7 +25,11 @@ data:
     exporters:
       googlecloud:
         project: "{{ .Values.projectId }}"
-      
+      prometheus:
+        endpoint: 0.0.0.0:8889
+        namespace: otel
+        const_labels:
+          service: "opentelemetry-collector"
       debug:
         verbosity: detailed
 
@@ -33,8 +37,15 @@ data:
       telemetry:
         logs:
           level: debug
+        metrics:
+          level: detailed
+          address: 0.0.0.0:8888
       pipelines:
         traces:
           receivers: [otlp]
           processors: [memory_limiter, batch]
           exporters: [googlecloud, debug]
+        metrics:
+          receivers: [otlp]
+          processors: [memory_limiter, batch]
+          exporters: [googlecloud, prometheus, debug]

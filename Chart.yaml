@@ -24,3 +24,6 @@ dependencies:
   - name: otel
     version: 1.0.0
     repository: file://otel
+  - name: trace
+    version: 1.0.0
+    repository: file://trace

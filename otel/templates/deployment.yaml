@@ -25,6 +25,10 @@ spec:
           name: otlp-grpc
         - containerPort: {{ .Values.otelCollector.ports.http }}
           name: otlp-http
+        - containerPort: 8889
+          name: prometheus
+        - containerPort: 8888
+          name: telemetry
         volumeMounts:
         - name: otel-collector-config-vol
           mountPath: /conf
